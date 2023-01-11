@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cmorochoExamen.ventanas.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESE SUS CREDENCIALES" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+            <Image Source="logoUisrael.png"/>
+
+            <Label x:Name="lblusuario"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" TextColor="Black" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtusuario" Placeholder="Usuario" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Password" TextColor="Black" FontSize="15" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtpassword" Placeholder="Password" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+
+
+            </Grid>
+
+            <Button x:Name="btningresar" Text="INGRESAR" Clicked="btningresar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cmorochoExamen.ventanas.registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BIENVENIDO REGISTRESE" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Label x:Name="lblusuario" FontSize="15" TextColor="Red" HorizontalTextAlignment="End"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Nombre:" TextColor="Black" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Monto Inicial:" TextColor="Black" FontSize="15" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtminicial" Placeholder="M. Inicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Pago Mensual:" TextColor="Black" FontSize="15" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtpago" Placeholder="Pago Mensual" IsEnabled="False" Grid.Row="2" Grid.Column="1"/>
+
+                <Label x:Name="txtcuota" />
+
+
+
+            </Grid>
+
+            <Button x:Name="btncalcular" Text="CALCULAR" Clicked="btncalcular_Clicked"/>
+
+            <Button x:Name="btnguardar" Text="GUARDAR" Clicked="btnguardar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

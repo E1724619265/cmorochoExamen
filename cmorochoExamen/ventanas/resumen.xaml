@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cmorochoExamen.ventanas.resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BIENVENIDO AL RESUMEN" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Label x:Name="lblusuario" FontSize="15" TextColor="Red" HorizontalTextAlignment="End"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" TextColor="Black" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblnombre" FontSize="20" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Total a Pagar:" TextColor="Black" FontSize="15" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lbltotal" FontSize="20" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+
+
+            </Grid>
+
+            <Button x:Name="btnacerca" Text="ACERCA DE" Clicked="btnacerca_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
